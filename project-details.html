@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Shehzan Faqqih</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Interactive Background -->
+    <div id="dot-grid-container"></div>
+
+    <!-- Navbar Minimal -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Shehzan.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#projects"><i class="ph ph-arrow-left"></i> Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Details Container -->
+    <section class="section project-details-section">
+        <div class="container">
+            <div id="project-details-content">
+                <!-- Data injected via projects-data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Shehzan Faqqih.</p>
+            <div class="footer-socials">
+                <a href="https://campsite.bio/shehzan" target="_blank"><i class="ph ph-link"></i></a>
+                <a href="https://github.com/LowkeyShehz" target="_blank"><i class="ph ph-github-logo"></i></a>
+                <a href="https://twitter.com/lowkeyshehz" target="_blank"><i class="ph ph-twitter-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & DotGrid Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
+    <script src="dotgrid.js"></script>
+
+    <!-- Custom JS -->
+    <script src="projects-data.js"></script>
+</body>
+
+</html>

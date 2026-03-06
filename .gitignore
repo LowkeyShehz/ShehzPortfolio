@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Package manager lock files (optional — remove if you want to track)
+package-lock.json
+
+# Scratch / debug scripts
+check_errors.js
+screenshot.js
+screenshot_projects.js
+screenshot.py
+
+# Raw source images (the copies in the root - assets/images/ are tracked)
+image.png
+"image copy.png"
+"image copy 2.png"
+"image copy 3.png"
+"image copy 4.png"
+"image copy 5.png"
+"image copy 6.png"
+"image copy 7.png"
+"image copy 8.png"
+"image copy 9.png"
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/

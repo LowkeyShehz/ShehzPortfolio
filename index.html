@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehzan Faqqih | Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Shehzan Faqqih, a developer passionate about Web, Apps & Games.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Interactive Background -->
+    <div id="dot-grid-container"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Shehzan.</a>
+            <ul class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="ph ph-list"></i>
+                </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section fade-in-section">
+        <div class="decorative-blob blob-1"></div>
+        <div class="decorative-blob blob-2"></div>
+
+        <div class="container hero-container">
+            <!-- Ensure alignment inside the flex container wrapper created by BlurText -->
+            <h1 class="hero-title blur-text" style="justify-content: center" data-animate-by="letters" data-delay="40"
+                data-direction="top">Hi, I'm Shehzan :)</h1>
+            <h2 class="hero-subtitle blur-text" style="justify-content: center" data-animate-by="words" data-delay="100"
+                data-direction="bottom">Developer passionate about Apps, Games & Web.</h2>
+            <p class="hero-tagline blur-text" style="justify-content: center" data-animate-by="words" data-delay="50"
+                data-direction="top">I build things that live on screens. Websites, mobile apps, and interactive game
+                experiences.</p>
+
+            <div class="hero-ctas">
+                <a href="#projects" class="clay-btn primary-btn">View Projects</a>
+                <a href="#contact" class="clay-btn outline-btn">Get In Touch</a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://github.com/LowkeyShehz" target="_blank" class="clay-pill social-pill"><i
+                        class="ph-fill ph-github-logo"></i> GitHub</a>
+                <a href="https://linkedin.com/in/shehzan-faqqih" target="_blank" class="clay-pill social-pill"><i
+                        class="ph-fill ph-linkedin-logo"></i> LinkedIn</a>
+                <!--<a href="https://twitter.com/lowkeyshehz" target="_blank" class="clay-pill social-pill"><i
+                        class="ph-fill ph-twitter-logo"></i> X</a>-->
+                <a href="https://instagram.com/lowkeyshehz" target="_blank" class="clay-pill social-pill"><i
+                        class="ph-fill ph-instagram-logo"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Things I've Built</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="clay-card project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Result auto-fetcher</h3>
+                        <p class="project-desc">A modern web app for VTU students to auto-fetch results, solve CAPTCHAs,
+                            and calculate CGPA/SGPA.</p>
+                        <div class="project-tags">
+                            <span class="clay-pill tiny-pill">Next.js 15</span>
+                            <span class="clay-pill tiny-pill">React 19</span>
+                            <span class="clay-pill tiny-pill">Tailwind</span>
+                            <span class="clay-pill tiny-pill">Tesseract.js</span>
+                            <span class="clay-pill tiny-pill">Zustand</span>
+                        </div>
+                    </div>
+                    <a href="project-details.html?id=vtucgpa" class="project-link">View Details <i
+                            class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="clay-card project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Adhkar</h3>
+                        <p class="project-desc">A dedicated application for daily Adhkar and spiritual reflection.</p>
+                        <div class="project-tags">
+                            <span class="clay-pill tiny-pill">Jetpack Compose</span>
+                            <span class="clay-pill tiny-pill">Android</span>
+                            <span class="clay-pill tiny-pill">Room</span>
+                            <span class="clay-pill tiny-pill">Kotlin</span>
+                        </div>
+                    </div>
+                    <a href="project-details.html?id=adhkar" class="project-link">View Details <i
+                            class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="clay-card project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">AR History Learning App</h3>
+                        <p class="project-desc">Walk inside full-scale 3D monuments in AR. Explore Chichen Itza, the
+                            Pyramids, and more with audio narration.</p>
+                        <div class="project-tags">
+                            <span class="clay-pill tiny-pill">Unity</span>
+                            <span class="clay-pill tiny-pill">AR Core</span>
+                            <span class="clay-pill tiny-pill">C#</span>
+                            <span class="clay-pill tiny-pill">Android</span>
+                        </div>
+                    </div>
+                    <a href="project-details.html?id=arhistory" class="project-link">View Details <i
+                            class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="clay-card project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Third-Person Action RPG</h3>
+                        <p class="project-desc">A full RPG prototype in Unity with combat AI, NavMesh, inventory,
+                            survival stats, and mobile touch input.</p>
+                        <div class="project-tags">
+                            <span class="clay-pill tiny-pill">Unity</span>
+                            <span class="clay-pill tiny-pill">C#</span>
+                            <span class="clay-pill tiny-pill">NavMesh</span>
+                            <span class="clay-pill tiny-pill">Android</span>
+                        </div>
+                    </div>
+                    <a href="project-details.html?id=survival" class="project-link">View Details <i
+                            class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="clay-card project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">VectorProtocol</h3>
+                        <p class="project-desc">Self-development app built in Dart/Flutter. A personal productivity tool
+                            built for focused growth.</p>
+                        <div class="project-tags">
+                            <span class="clay-pill tiny-pill">Dart</span>
+                            <span class="clay-pill tiny-pill">Flutter</span>
+                            <span class="clay-pill tiny-pill">Riverpod</span>
+                            <span class="clay-pill tiny-pill">Isar</span>
+                        </div>
+                    </div>
+                    <a href="project-details.html?id=vectorprotocol" class="project-link">View Details <i
+                            class="ph ph-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="clay-card project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">ShehzHytale Portfolio</h3>
+                        <p class="project-desc">An HTML-based portfolio built for the Hytale game community.</p>
+                        <div class="project-tags">
+                            <span class="clay-pill tiny-pill">HTML</span>
+                            <span class="clay-pill tiny-pill">CSS</span>
+                        </div>
+                    </div>
+                    <a href="project-details.html?id=shehzhytale" class="project-link">View Details <i
+                            class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined About & Skills Section -->
+    <section id="about" class="section about-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title text-center">About Me</h2>
+
+            <div class="tabs-wrapper clay-card text-center">
+                <div class="tab-header">
+                    <button class="tab-btn clay-pill active" data-tab="tab-story"><i class="ph-fill ph-book-open"></i>
+                        Profile</button>
+                    <button class="tab-btn clay-pill" data-tab="tab-toolkit"><i class="ph-fill ph-wrench"></i>
+                        Tools & Tech</button>
+                </div>
+
+                <div class="tabs-body">
+                    <!-- Profile Tab -->
+                    <div id="tab-story" class="tab-content active">
+                        <div class="about-container">
+                            <div class="about-card clay-card">
+                                <div class="profile-image-wrapper">
+                                    <img src="assets/images/profile.png" alt="Shehzan Faqqih profile"
+                                        class="profile-img">
+                                </div>
+                            </div>
+                            <div class="about-content">
+                                <h3 class="tab-title">More than just code.</h3>
+                                <p class="about-text">
+                                    I'm Shehzan Faqqih — a developer who loves creating across the stack. Whether it's a
+                                    slick web app, an Android experience, or a Unity game, I enjoy bringing ideas to
+                                    life through code. Currently working on myself and building cool things along the
+                                    way.
+                                </p>
+                                <div class="about-tags">
+                                    <span class="clay-pill tag-pill">App Dev</span>
+                                    <span class="clay-pill tag-pill">Game Dev</span>
+                                    <span class="clay-pill tag-pill">Web Dev</span>
+                                    <span class="clay-pill tag-pill">Open Source</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Tech Tab -->
+                    <div id="tab-toolkit" class="tab-content">
+                        <div class="toolkit-grid">
+                            <div class="toolkit-group clay-card">
+                                <h4>Web & Frontend</h4>
+                                <div class="tools-list">
+                                    <span class="clay-pill tiny-pill">React 19</span>
+                                    <span class="clay-pill tiny-pill">Next.js 15</span>
+                                    <span class="clay-pill tiny-pill">Tailwind CSS</span>
+                                    <span class="clay-pill tiny-pill">Zustand</span>
+                                </div>
+                            </div>
+                            <div class="toolkit-group clay-card">
+                                <h4>Backend & Data</h4>
+                                <div class="tools-list">
+                                    <span class="clay-pill tiny-pill">Node.js</span>
+                                    <span class="clay-pill tiny-pill">Room (SQLite)</span>
+                                    <span class="clay-pill tiny-pill">Isar (NoSQL)</span>
+                                    <span class="clay-pill tiny-pill">Riverpod</span>
+                                </div>
+                            </div>
+                            <div class="toolkit-group clay-card">
+                                <h4>Core Languages</h4>
+                                <div class="tools-list">
+                                    <span class="clay-pill tiny-pill">Dart</span>
+                                    <span class="clay-pill tiny-pill">Kotlin</span>
+                                    <span class="clay-pill tiny-pill">C#</span>
+                                    <span class="clay-pill tiny-pill">JavaScript / TS</span>
+                                </div>
+                            </div>
+                            <div class="toolkit-group clay-card">
+                                <h4>Platforms & Frameworks</h4>
+                                <div class="tools-list">
+                                    <span class="clay-pill tiny-pill">Flutter</span>
+                                    <span class="clay-pill tiny-pill">Android (Compose)</span>
+                                    <span class="clay-pill tiny-pill">Unity 3D</span>
+                                    <span class="clay-pill tiny-pill">AR Foundation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section fade-in-section">
+        <div class="container contact-container">
+            <h2 class="section-title text-center">Let's Connect</h2>
+            <p class="contact-copy">I'm always open to new projects, collaborations, or just a good conversation. Reach
+                out.</p>
+
+            <div class="clay-card contact-card">
+                <a href="mailto:contact@example.com" class="clay-btn contact-btn"><i
+                        class="ph-fill ph-envelope-simple"></i> Email Me</a>
+                <a href="https://linkedin.com/in/shehzan-faqqih" target="_blank" class="clay-btn contact-btn"><i
+                        class="ph-fill ph-linkedin-logo"></i> LinkedIn</a>
+                <a href="https://github.com/LowkeyShehz" target="_blank" class="clay-btn contact-btn"><i
+                        class="ph-fill ph-github-logo"></i> GitHub</a>
+            </div>
+
+            <div class="status-indicator">
+                <div class="status-pill clay-pill">
+                    <span class="status-dot"></span> Working on myself
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Shehzan Faqqih.</p>
+            <div class="footer-socials">
+                <a href="https://campsite.bio/shehzan" target="_blank"><i class="ph ph-link"></i></a>
+                <a href="https://github.com/LowkeyShehz" target="_blank"><i class="ph ph-github-logo"></i></a>
+                <a href="https://twitter.com/lowkeyshehz" target="_blank"><i class="ph ph-twitter-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Animations (DotGrid & BlurText) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
+    <script src="dotgrid.js"></script>
+    <script src="blurtext.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
