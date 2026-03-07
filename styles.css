@@ -1586,4 +1586,75 @@ footer {
     height: auto;
     aspect-ratio: 16/9;
   }
+
+  /* Carousel Refinements */
+  .carousel-card {
+    flex: 0 0 280px;
+    /* Smaller cards to show more of the next one */
+    padding: 1.25rem;
+  }
+
+  .carousel-project-title {
+    font-size: 1.1rem;
+  }
+
+  .carousel-project-desc {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 3;
+    /* More space for text */
+    line-clamp: 3;
+  }
+
+  /* About Section Refinements */
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .tabs-wrapper {
+    padding: 1.5rem 1rem;
+    margin: 0 10px;
+  }
+
+  .tab-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .tab-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    flex: 1 1 auto;
+  }
+
+  .about-container {
+    gap: 1.5rem;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .tab-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .about-tags {
+    justify-content: center;
+  }
+
+  .toolkit-group {
+    padding: 1.25rem;
+  }
+
+  .toolkit-group h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
