@@ -1811,26 +1811,6 @@ footer {
   .form-row {
     flex-direction: column;
   }
-
-  /* Mobile Navigation Overrides */
-  :root {
-    --nav-height: 60px;
-    /* Reduce navbar height */
-  }
-
-  nav {
-    padding: 10px 0;
-  }
-
-  /* Hide default nav links */
-  .nav-links {
-    display: none;
-  }
-
-  /* Show the hamburger toggle */
-  .mobile-menu-toggle {
-    display: flex;
-  }
 }
 
 /* =========================================================================
@@ -1943,4 +1923,27 @@ footer {
 .mobile-nav-links a:hover,
 .mobile-nav-links a:active {
   color: var(--primary-green);
+}
+
+/* =========================================================================
+   MOBILE NAVIGATION SPECIFICITY OVERRIDES (MUST BE AT THE VERY BOTTOM)
+   ========================================================================= */
+@media (max-width: 768px) {
+  #navbar {
+    height: 60px;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .mobile-menu-toggle {
+    display: flex !important;
+  }
+
+  /* Adjust mobile menu top position if navbar shrinks */
+  .mobile-menu {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
 }
