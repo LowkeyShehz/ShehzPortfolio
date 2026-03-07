@@ -115,4 +115,46 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Contact Form Logic (Web3Forms & Character Counter)
+    const contactForm = document.getElementById('contactForm');
+    const messageInput = document.getElementById('message');
+    const charCounter = document.getElementById('charCounter');
+    const submitBtn = document.querySelector('.submit-btn');
+
+    if (messageInput && charCounter) {
+        const maxLength = messageInput.getAttribute('maxlength');
+
+        messageInput.addEventListener('input', () => {
+            const currentLength = messageInput.value.length;
+            charCounter.textContent = `${currentLength}/${maxLength} characters`;
+
+            if (currentLength >= maxLength) {
+                charCounter.style.color = 'var(--text-primary)';
+            } else {
+                charCounter.style.color = 'var(--text-secondary)';
+            }
+        });
+    }
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            // We let the default submission happen so Web3Forms can handle the redirect or API call.
+            // If you wanted to do this via AJAX without redirecting, you'd preventDefault() here 
+            // and use fetch(), then show a success message on the page.
+
+            // For now, let's just change the button text to show it's processing
+            if (submitBtn) {
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.classList.add('processing');
+
+                // Reset button after a short delay (in case submission fails or takes a moment)
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.classList.remove('processing');
+                }, 3000);
+            }
+        });
+    }
 });

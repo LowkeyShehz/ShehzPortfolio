@@ -281,7 +281,7 @@ The **camera scan button** in the Missions (Tasks) screen uses Google ML Kit Tex
     },
     "shehzhytale": {
         title: "Hytale Portfolio",
-        subtitle: "An HTML-based portfolio built for the Hytale game community.",
+        subtitle: "My portfolio for the Hytale projects.",
         tags: ["HTML", "CSS", "Community Project"],
         content: `
 ## Overview

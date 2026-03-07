@@ -191,8 +191,7 @@
                     <div class="clay-card carousel-card" onclick="location.href='project-details.html?id=shehzhytale'">
                         <div class="carousel-content">
                             <h4 class="carousel-project-title">Hytale Portfolio</h4>
-                            <p class="carousel-project-desc">An HTML-based portfolio built for the Hytale game
-                                community.</p>
+                            <p class="carousel-project-desc">My portfolio for the Hytale projects.</p>
                             <div class="carousel-tags">
                                 <span>HTML</span><span>CSS</span>
                             </div>
@@ -302,21 +301,44 @@
     <section id="contact" class="section contact-section fade-in-section">
         <div class="container contact-container">
             <h2 class="section-title text-center">Let's Connect</h2>
-            <p class="contact-copy">I'm always open to new projects, collaborations, or just a good conversation. Reach
-                out.</p>
+            <p class="contact-copy text-center" style="margin-bottom: 2rem; max-width: 600px;">I'm always open to new
+                projects, collaborations, or just a good conversation. Feel free to drop me a message below.</p>
 
-            <div class="clay-card contact-card">
-                <a href="mailto:contact@example.com" class="clay-btn contact-btn"><i
-                        class="ph-fill ph-envelope-simple"></i> Email Me</a>
-                <a href="https://linkedin.com/in/shehzan-faqqih" target="_blank" class="clay-btn contact-btn"><i
-                        class="ph-fill ph-linkedin-logo"></i> LinkedIn</a>
-                <a href="https://github.com/LowkeyShehz" target="_blank" class="clay-btn contact-btn"><i
-                        class="ph-fill ph-github-logo"></i> GitHub</a>
-            </div>
+            <div class="clay-card contact-form-wrapper">
+                <!-- Web3Forms Integration -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+                    <input type="hidden" name="access_key" value="9698f045-0af5-43fd-a922-749ea75635c0">
+                    <input type="hidden" name="subject" value="New message from Shehzan's Portfolio">
 
-            <div class="status-indicator">
-                <div class="status-pill clay-pill">
-                    <span class="status-dot"></span> Working on myself
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-input" placeholder="Your Name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-input" placeholder="Your Email"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group textarea-group">
+                        <textarea name="message" id="message" class="form-textarea"
+                            placeholder="How can I help you? Project details, questions, or just a greeting..." required
+                            maxlength="1000"></textarea>
+                        <span class="char-counter" id="charCounter">0/1000 characters</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <!-- Web3Forms hCaptcha (Optional but recommended for spam protection) -->
+                    <!-- <div class="h-captcha" data-captcha="true"></div> -->
+                </form>
+
+                <div class="contact-socials-row">
+                    <a href="mailto:shehzan346@gmail.com" class="social-icon"><i class="ph ph-envelope-simple"></i></a>
+                    <a href="https://linkedin.com/in/shehzan-faqqih" target="_blank" class="social-icon"><i
+                            class="ph ph-linkedin-logo"></i></a>
+                    <a href="https://github.com/LowkeyShehz" target="_blank" class="social-icon"><i
+                            class="ph ph-github-logo"></i></a>
                 </div>
             </div>
         </div>
