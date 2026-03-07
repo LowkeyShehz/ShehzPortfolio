@@ -84,108 +84,129 @@
     <section id="projects" class="section projects-section fade-in-section">
         <div class="container">
             <h2 class="section-title">Things I've Built</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="clay-card project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Result auto-fetcher</h3>
-                        <p class="project-desc">A modern web app for VTU students to auto-fetch results, solve CAPTCHAs,
-                            and calculate CGPA/SGPA.</p>
-                        <div class="project-tags">
-                            <span class="clay-pill tiny-pill">Next.js 15</span>
-                            <span class="clay-pill tiny-pill">React 19</span>
-                            <span class="clay-pill tiny-pill">Tailwind</span>
-                            <span class="clay-pill tiny-pill">Tesseract.js</span>
-                            <span class="clay-pill tiny-pill">Zustand</span>
-                        </div>
+            <div class="projects-layout">
+
+                <!-- Left: Synced Info Panel -->
+                <div class="featured-info">
+                    <div class="featured-cover-wrapper">
+                        <img src="assets/images/vtucgpa.png" alt="Featured Project" id="featured-cover"
+                            class="featured-cover-img">
                     </div>
-                    <a href="project-details.html?id=vtucgpa" class="project-link">View Details <i
-                            class="ph ph-arrow-right"></i></a>
+                    <div class="featured-text-content">
+                        <div class="featured-meta">
+                            <span id="featured-tag" class="clay-pill tiny-pill"
+                                style="background: linear-gradient(135deg, var(--primary-green), var(--sage-green)); color: white; border: none;">Web</span>
+                        </div>
+                        <h3 id="featured-title" class="featured-title">Result Auto-Fetcher</h3>
+                        <p id="featured-desc" class="featured-desc">Auto-fetch VTU results &amp; CGPA calculation with
+                            client-side OCR.</p>
+                        <a id="featured-link" href="project-details.html?id=vtucgpa" class="project-link">View Details
+                            <i class="ph ph-arrow-right"></i></a>
+                    </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="clay-card project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Adhkar</h3>
-                        <p class="project-desc">A dedicated application for daily Adhkar and spiritual reflection.</p>
-                        <div class="project-tags">
-                            <span class="clay-pill tiny-pill">Jetpack Compose</span>
-                            <span class="clay-pill tiny-pill">Android</span>
-                            <span class="clay-pill tiny-pill">Room</span>
-                            <span class="clay-pill tiny-pill">Kotlin</span>
+                <!-- Right: CardSwap visual -->
+                <div class="cardswap-wrapper">
+                    <div class="card-swap-container" data-card-swap data-card-distance="30" data-vertical-distance="40"
+                        data-delay="3500" data-skew-amount="4" data-easing="elastic">
+
+                        <div class="cs-card" data-project-id="vtucgpa" data-cover="assets/images/vtucgpa-5.png"
+                            onclick="location.href='project-details.html?id=vtucgpa'">
+                            <div class="cs-card-inner">
+                                <div class="cs-card-tag">Web</div>
+                                <h3 class="cs-card-title">Result Auto-Fetcher</h3>
+                                <p class="cs-card-desc">Auto-fetch VTU results &amp; CGPA calculation with client-side
+                                    OCR.</p>
+                                <div class="cs-card-tags">
+                                    <span>Next.js 15</span><span>Tesseract.js</span><span>Zustand</span>
+                                </div>
+                                <div class="cs-card-footer"><i class="ph ph-arrow-right"></i> View Project</div>
+                            </div>
                         </div>
+
+                        <div class="cs-card" data-project-id="vectorprotocol"
+                            onclick="location.href='project-details.html?id=vectorprotocol'">
+                            <div class="cs-card-inner">
+                                <div class="cs-card-tag">Mobile</div>
+                                <h3 class="cs-card-title">VectorProtocol</h3>
+                                <p class="cs-card-desc">Gamified self-development tracker with radar charts &amp; RPG
+                                    progression.</p>
+                                <div class="cs-card-tags">
+                                    <span>Flutter</span><span>Riverpod</span><span>Isar</span>
+                                </div>
+                                <div class="cs-card-footer"><i class="ph ph-arrow-right"></i> View Project</div>
+                            </div>
+                        </div>
+
+                        <div class="cs-card" data-project-id="survival"
+                            onclick="location.href='project-details.html?id=survival'">
+                            <div class="cs-card-inner">
+                                <div class="cs-card-tag">Game Dev</div>
+                                <h3 class="cs-card-title">Action RPG</h3>
+                                <p class="cs-card-desc">Full 3rd-person RPG prototype with enemy AI, NavMesh &amp; touch
+                                    controls.</p>
+                                <div class="cs-card-tags">
+                                    <span>Unity</span><span>C#</span><span>NavMesh</span>
+                                </div>
+                                <div class="cs-card-footer"><i class="ph ph-arrow-right"></i> View Project</div>
+                            </div>
+                        </div>
+
+                        <div class="cs-card" data-project-id="arhistory" data-cover="assets/images/ar-3.png"
+                            onclick="location.href='project-details.html?id=arhistory'">
+                            <div class="cs-card-inner">
+                                <div class="cs-card-tag">AR / XR</div>
+                                <h3 class="cs-card-title">AR History App</h3>
+                                <p class="cs-card-desc">Walk inside full-scale historical monuments placed in AR.</p>
+                                <div class="cs-card-tags">
+                                    <span>Unity</span><span>AR Core</span><span>C#</span>
+                                </div>
+                                <div class="cs-card-footer"><i class="ph ph-arrow-right"></i> View Project</div>
+                            </div>
+                        </div>
+
                     </div>
-                    <a href="project-details.html?id=adhkar" class="project-link">View Details <i
-                            class="ph ph-arrow-right"></i></a>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="clay-card project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">AR History Learning App</h3>
-                        <p class="project-desc">Walk inside full-scale 3D monuments in AR. Explore Chichen Itza, the
-                            Pyramids, and more with audio narration.</p>
-                        <div class="project-tags">
-                            <span class="clay-pill tiny-pill">Unity</span>
-                            <span class="clay-pill tiny-pill">AR Core</span>
-                            <span class="clay-pill tiny-pill">C#</span>
-                            <span class="clay-pill tiny-pill">Android</span>
-                        </div>
-                    </div>
-                    <a href="project-details.html?id=arhistory" class="project-link">View Details <i
-                            class="ph ph-arrow-right"></i></a>
-                </div>
+            </div>
 
-                <!-- Project 4 -->
-                <div class="clay-card project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Third-Person Action RPG</h3>
-                        <p class="project-desc">A full RPG prototype in Unity with combat AI, NavMesh, inventory,
-                            survival stats, and mobile touch input.</p>
-                        <div class="project-tags">
-                            <span class="clay-pill tiny-pill">Unity</span>
-                            <span class="clay-pill tiny-pill">C#</span>
-                            <span class="clay-pill tiny-pill">NavMesh</span>
-                            <span class="clay-pill tiny-pill">Android</span>
+            <!-- Bottom: Carousel of Other Projects -->
+            <div class="projects-carousel-section">
+                <h3 class="carousel-title">More Projects</h3>
+                <div class="projects-carousel">
+                    <div class="clay-card carousel-card" onclick="location.href='project-details.html?id=adhkar'">
+                        <div class="carousel-content">
+                            <h4 class="carousel-project-title">Adhkar</h4>
+                            <p class="carousel-project-desc">A dedicated application for daily Adhkar and spiritual
+                                reflection.</p>
+                            <div class="carousel-tags">
+                                <span>Jetpack Compose</span><span>Android</span>
+                            </div>
                         </div>
+                        <a href="project-details.html?id=adhkar" class="carousel-link"><i
+                                class="ph ph-arrow-right"></i></a>
                     </div>
-                    <a href="project-details.html?id=survival" class="project-link">View Details <i
-                            class="ph ph-arrow-right"></i></a>
-                </div>
 
-                <!-- Project 5 -->
-                <div class="clay-card project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">VectorProtocol</h3>
-                        <p class="project-desc">Self-development app built in Dart/Flutter. A personal productivity tool
-                            built for focused growth.</p>
-                        <div class="project-tags">
-                            <span class="clay-pill tiny-pill">Dart</span>
-                            <span class="clay-pill tiny-pill">Flutter</span>
-                            <span class="clay-pill tiny-pill">Riverpod</span>
-                            <span class="clay-pill tiny-pill">Isar</span>
+                    <div class="clay-card carousel-card" onclick="location.href='project-details.html?id=shehzhytale'">
+                        <div class="carousel-content">
+                            <h4 class="carousel-project-title">Hytale Portfolio</h4>
+                            <p class="carousel-project-desc">An HTML-based portfolio built for the Hytale game
+                                community.</p>
+                            <div class="carousel-tags">
+                                <span>HTML</span><span>CSS</span>
+                            </div>
                         </div>
+                        <a href="project-details.html?id=shehzhytale" class="carousel-link"><i
+                                class="ph ph-arrow-right"></i></a>
                     </div>
-                    <a href="project-details.html?id=vectorprotocol" class="project-link">View Details <i
-                            class="ph ph-arrow-right"></i></a>
-                </div>
 
-                <!-- Project 6 -->
-                <div class="clay-card project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">ShehzHytale Portfolio</h3>
-                        <p class="project-desc">An HTML-based portfolio built for the Hytale game community.</p>
-                        <div class="project-tags">
-                            <span class="clay-pill tiny-pill">HTML</span>
-                            <span class="clay-pill tiny-pill">CSS</span>
-                        </div>
-                    </div>
-                    <a href="project-details.html?id=shehzhytale" class="project-link">View Details <i
-                            class="ph ph-arrow-right"></i></a>
+                    <!-- We can add 'view all projects' card here if needed later -->
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Combined About & Skills Section -->
     <section id="about" class="section about-section fade-in-section">
@@ -317,6 +338,7 @@
     <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
     <script src="dotgrid.js"></script>
     <script src="blurtext.js"></script>
+    <script src="cardswap.js"></script>
 
     <!-- Custom JS -->
     <script src="script.js"></script>

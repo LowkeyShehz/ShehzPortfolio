@@ -5,6 +5,14 @@ const projectsData = {
         tags: ["Next.js 15", "React 19", "Tailwind CSS", "Tesseract.js", "Zustand"],
         github: "https://github.com/LowkeyShehz/VTU-CGPA-Calculator",
         demo: "#",
+        images: [
+            { src: "assets/images/vtucgpa-1.png", caption: "Semester CGPA & SGPA breakdown dashboard" },
+            { src: "assets/images/vtucgpa-2.png", caption: "Dark mode student result view" },
+            { src: "assets/images/vtucgpa-3.png", caption: "Detailed subject grading & metrics" },
+            { src: "assets/images/vtucgpa-4.png", caption: "Results analytics & performance charts" },
+            { src: "assets/images/vtucgpa-5.png", caption: "Auto-fetch portal with Client-Side OCR bypass" },
+            { src: "assets/images/vtucgpa-6.png", caption: "Bulk USN parsing & extraction" }
+        ],
         content: `
 ## Features
 
@@ -272,13 +280,12 @@ The **camera scan button** in the Missions (Tasks) screen uses Google ML Kit Tex
         `
     },
     "shehzhytale": {
-        title: "ShehzHytale Portfolio",
+        title: "Hytale Portfolio",
         subtitle: "An HTML-based portfolio built for the Hytale game community.",
         tags: ["HTML", "CSS", "Community Project"],
         content: `
 ## Overview
-A passion project creating a themed portfolio and landing page specifically tailored for the Hytale online game community, utilizing custom CSS art styles to match the game's blocky aesthetic.
-        `
+A passion project creating a themed portfolio and landing page for my Hytale projects.        `
     }
 };
 
