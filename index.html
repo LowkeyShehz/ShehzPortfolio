@@ -4,8 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shehzan Faqqih | Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Shehzan Faqqih, a developer passionate about Web, Apps & Games.">
+    <title>Shehzan Faqqih | Developer Portfolio & Founder of Shehz Studios</title>
+    <meta name="description"
+        content="Portfolio of Shehzan Faqqih, a developer building Web, Apps & Games, and founder of Shehz Studios, an AI-native indie game studio making stylized low poly multiplayer games.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shehz Studios | AI-native indie game studio">
+    <meta property="og:description"
+        content="Shehz Studios builds stylized low poly multiplayer games with AI-accelerated development. First title: a multiplayer zombie apocalypse game, now in pre-production.">
+    <!-- Structured data. Studio name is a placeholder: update here, in the nav, and in the Studio section when finalised. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Shehz Studios",
+        "description": "AI-native indie game studio building stylized low poly multiplayer games.",
+        "founder": { "@type": "Person", "name": "Shehzan Faqqih" }
+    }
+    </script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +43,7 @@
         <div class="nav-content">
             <a href="#" class="logo">Shehzan.</a>
             <ul class="nav-links">
+                <li><a href="#studio">Studio</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -43,6 +59,7 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-nav-links">
+            <li><a href="#studio">Studio</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -55,6 +72,8 @@
         <div class="decorative-blob blob-2"></div>
 
         <div class="container hero-container">
+            <a href="#studio" class="clay-pill studio-badge"><span class="studio-badge-dot"></span> Now building:
+                Shehz Studios <i class="ph ph-arrow-right"></i></a>
             <!-- Ensure alignment inside the flex container wrapper created by BlurText -->
             <h1 class="hero-title blur-text" style="justify-content: center" data-animate-by="letters" data-delay="40"
                 data-direction="top">Hi, I'm Shehzan&nbsp;:)</h1>
@@ -62,11 +81,11 @@
                 data-direction="bottom">Developer passionate about Apps, Games & Web.</h2>
             <p class="hero-tagline blur-text" style="justify-content: center" data-animate-by="words" data-delay="50"
                 data-direction="top">I build things that live on screens. Websites, mobile apps, and interactive game
-                experiences.</p>
+                experiences. Now I'm founding an AI-native game studio.</p>
 
             <div class="hero-ctas">
-                <a href="#projects" class="clay-btn primary-btn">View Projects</a>
-                <a href="#contact" class="clay-btn outline-btn">Get In Touch</a>
+                <a href="#studio" class="clay-btn primary-btn">Meet the Studio</a>
+                <a href="#projects" class="clay-btn outline-btn">View Projects</a>
             </div>
 
             <div class="hero-socials">
@@ -78,6 +97,104 @@
                         class="ph-fill ph-twitter-logo"></i> X</a>
                 <a href="https://instagram.com/lowkeyshehz" target="_blank" class="clay-pill social-pill"><i
                         class="ph-fill ph-instagram-logo"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Section -->
+    <section id="studio" class="section studio-section fade-in-section">
+        <div class="container">
+            <div class="studio-header text-center">
+                <span class="clay-pill tiny-pill studio-status"><span class="studio-badge-dot"></span> Pre-production
+                    &middot; Bootstrapped</span>
+                <h2 class="section-title text-center">Shehz Studios</h2>
+                <p class="studio-lead">An AI-native indie game studio. We make stylized, low poly multiplayer games, and
+                    use AI to let a very small team ship what used to take a very large one.</p>
+            </div>
+
+            <!-- Flagship game -->
+            <div class="clay-card studio-game">
+                <div class="studio-game-info">
+                    <div class="studio-game-meta">
+                        <span class="clay-pill tiny-pill">First Title</span>
+                        <span class="clay-pill tiny-pill">Concept</span>
+                    </div>
+                    <h3 class="studio-game-title">Multiplayer Zombie Apocalypse</h3>
+                    <p class="studio-game-sub">Working title &middot; stylized low poly &middot; multiplayer</p>
+                    <p class="studio-game-desc">
+                        Our first game drops players into a stylized, low poly zombie apocalypse and asks them to
+                        survive it together. The low poly look is a deliberate choice: it gives the game a strong,
+                        readable identity and keeps art production fast enough for a small team to iterate on, while
+                        staying light enough to run on a wide range of devices.
+                    </p>
+                    <div class="tools-list">
+                        <span class="clay-pill tiny-pill">Unity</span>
+                        <span class="clay-pill tiny-pill">C#</span>
+                        <span class="clay-pill tiny-pill">Low Poly Art</span>
+                        <span class="clay-pill tiny-pill">Online Multiplayer</span>
+                    </div>
+                </div>
+
+                <div class="studio-roadmap">
+                    <h4>Roadmap</h4>
+                    <ol class="roadmap-list">
+                        <li class="roadmap-item current">
+                            <span class="roadmap-marker"></span>
+                            <div>
+                                <strong>Concept &amp; core loop</strong>
+                                <p>Defining the survival loop, art direction and multiplayer design.</p>
+                            </div>
+                        </li>
+                        <li class="roadmap-item">
+                            <span class="roadmap-marker"></span>
+                            <div>
+                                <strong>Playable prototype</strong>
+                                <p>Movement, combat and zombie AI in a small test map.</p>
+                            </div>
+                        </li>
+                        <li class="roadmap-item">
+                            <span class="roadmap-marker"></span>
+                            <div>
+                                <strong>Multiplayer playtests</strong>
+                                <p>Networked sessions with real players and feedback loops.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- How we build with AI -->
+            <h3 class="studio-subtitle">How we build with AI</h3>
+            <div class="studio-grid">
+                <div class="clay-card studio-feature">
+                    <div class="studio-feature-icon"><i class="ph-fill ph-code"></i></div>
+                    <h4>AI-assisted engineering</h4>
+                    <p>We use Claude to write, review and refactor gameplay code, tooling and systems in C#. Every
+                        change is reviewed and tested by a human developer, so AI speeds up the work without lowering
+                        the bar.</p>
+                </div>
+                <div class="clay-card studio-feature">
+                    <div class="studio-feature-icon"><i class="ph-fill ph-cube"></i></div>
+                    <h4>AI-accelerated art pipeline</h4>
+                    <p>A low poly style suits AI-assisted asset workflows: faster concepting, quicker iteration on
+                        props and environments, and a consistent look. Art direction and final polish stay in human
+                        hands.</p>
+                </div>
+                <div class="clay-card studio-feature">
+                    <div class="studio-feature-icon"><i class="ph-fill ph-users-three"></i></div>
+                    <h4>Small team, proven builder</h4>
+                    <p>The founder has already built a Unity action RPG prototype with enemy AI and NavMesh, an AR
+                        history app, and Flutter and Next.js products (see below). The studio grows out of that
+                        hands-on experience.</p>
+                </div>
+            </div>
+
+            <div class="studio-cta text-center">
+                <p>Following the build, want to playtest early, or interested in working together?</p>
+                <div class="hero-ctas studio-ctas">
+                    <a href="#contact" class="clay-btn primary-btn">Talk to the Studio</a>
+                    <a href="#projects" class="clay-btn outline-btn">See Founder's Work</a>
+                </div>
             </div>
         </div>
     </section>
@@ -238,10 +355,15 @@
                                     I'm Shehzan Faqqih. A developer who lives across the stack. Web, Android, Unity.
                                     I chase interesting problems wherever they show up. Still learning, always building.
                                 </p>
+                                <p class="about-text">
+                                    Now I'm founding <strong>Shehz Studios</strong>, an AI-native game studio making
+                                    stylized low poly multiplayer games, starting with a zombie apocalypse title.
+                                </p>
                                 <div class="about-tags">
                                     <span class="clay-pill tag-pill">App Dev</span>
                                     <span class="clay-pill tag-pill">Game Dev</span>
                                     <span class="clay-pill tag-pill">Web Dev</span>
+                                    <span class="clay-pill tag-pill">Founder</span>
                                     <span class="clay-pill tag-pill">Open Source</span>
                                 </div>
                             </div>
@@ -300,8 +422,9 @@
     <section id="contact" class="section contact-section fade-in-section">
         <div class="container contact-container">
             <h2 class="section-title text-center">Let's Connect</h2>
-            <p class="contact-copy text-center" style="margin-bottom: 2rem; max-width: 600px;">I'm always open to new
-                projects, collaborations, or just a good conversation. Feel free to drop me a message below.</p>
+            <p class="contact-copy text-center" style="margin-bottom: 2rem; max-width: 600px;">Questions about
+                Shehz Studios, early playtesting, collaborations, or just a good conversation? Drop me a message
+                below.</p>
 
             <div class="clay-card contact-form-wrapper">
                 <!-- Web3Forms Integration -->
@@ -346,7 +469,7 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-container">
-            <p>&copy; 2026 Shehzan Faqqih.</p>
+            <p>&copy; 2026 Shehzan Faqqih &middot; Shehz Studios.</p>
             <div class="footer-socials">
                 <a href="https://campsite.bio/shehzan" target="_blank"><i class="ph ph-link"></i></a>
                 <a href="https://github.com/LowkeyShehz" target="_blank"><i class="ph ph-github-logo"></i></a>

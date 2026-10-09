@@ -1947,3 +1947,220 @@ footer {
     height: calc(100vh - 60px);
   }
 }
+/* ==========================================================================
+   Studio Section (Shehz Studios)
+   ========================================================================== */
+.studio-badge {
+  margin-bottom: 1.5rem;
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.studio-badge:hover {
+  transform: translateY(-2px);
+}
+
+.studio-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sage-green);
+  box-shadow: 0 0 0 0 rgba(116, 198, 157, 0.7);
+  animation: studio-pulse 2s infinite;
+}
+
+@keyframes studio-pulse {
+  70% {
+    box-shadow: 0 0 0 8px rgba(116, 198, 157, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(116, 198, 157, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-badge-dot {
+    animation: none;
+  }
+}
+
+.studio-section {
+  background: transparent;
+}
+
+.studio-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.studio-status {
+  margin-bottom: 1.25rem;
+  color: var(--primary-green);
+}
+
+.studio-lead {
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  font-size: 1.125rem;
+  color: var(--text-light);
+}
+
+.studio-game {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2.5rem;
+  padding: 36px;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.studio-game-meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.studio-game-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.studio-game-sub {
+  color: var(--primary-green);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.studio-game-desc {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.studio-roadmap h4 {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--bg-color);
+}
+
+.roadmap-list {
+  list-style: none;
+  position: relative;
+}
+
+.roadmap-item {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
+.roadmap-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 20px;
+  bottom: 0;
+  width: 2px;
+  background: var(--bg-alt);
+}
+
+.roadmap-marker {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 3px solid var(--bg-alt);
+}
+
+.roadmap-item.current .roadmap-marker {
+  border-color: var(--primary-green);
+  background: var(--sage-green);
+}
+
+.roadmap-item strong {
+  display: block;
+  font-family: var(--font-heading);
+}
+
+.roadmap-item p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.studio-subtitle {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.studio-feature {
+  padding: 28px;
+  text-align: left;
+}
+
+.studio-feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  color: var(--primary-green);
+  background: var(--bg-alt);
+}
+
+.studio-feature h4 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.studio-feature p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.studio-cta p {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.studio-ctas {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .studio-game {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .studio-game {
+    padding: 24px;
+    gap: 2rem;
+  }
+
+  .studio-game-title {
+    font-size: 1.5rem;
+  }
+}
